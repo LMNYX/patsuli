@@ -3,16 +3,10 @@
       @mousemove="onMouseMove"
       @mouseleave="onMouseLeave">
         <div class="content">
-          <NuxtImg :src="cover" class="card-background" />
-          <p class="card-title">{{ title }}</p>
+          <p class="card-title always-visible icon-inside"><Icon name="stash:plus-solid" /></p>
         </div>
   </div>
 </template>
-
-<script lang="ts" setup>
-const props = defineProps(['title', 'cover'])
-</script>
-
 <style lang="scss" scoped>
 @import '~/assets/scss/card.scss';
 </style>
