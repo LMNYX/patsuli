@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <h1 class="page-title">Library</h1>
+    <h1 class="page-title">{{ username }}'s Library</h1>
     <div class="readable-entities">
       <div class="card" 
       @mousemove="onMouseMove"
@@ -26,7 +26,7 @@
           <p class="card-title">Kaguya-sama: Love is War</p>
         </div>
       </div>
-      <div class="card" 
+      <div class="card new-card" 
       @mousemove="onMouseMove"
       @mouseleave="onMouseLeave">
         <div class="content">
@@ -39,6 +39,7 @@
 </template>
 
 <script lang="ts" setup>
+const username = "user"
 const { onMouseMove, onMouseLeave } = useCardTilt()
 </script>
 
@@ -61,11 +62,23 @@ const { onMouseMove, onMouseLeave } = useCardTilt()
 
     transition: 0.2s;
 
+    &.new-card
+    {
+      background: $background;
+      border-style: dashed;
+      border-color: $background-highlight;
+
+      &:hover
+      {
+        border-color: transparent;
+      }
+    }
+
     &:hover
     {
       border-radius: 12px;
       background: $background-highlight2;
-      box-shadow: 0px 0px 200px 0px rgba(255,255,255,0.125125125);
+      box-shadow: 0px 0px 200px 0px rgba(255,255,255,0.135125125);
       
 
       img.card-background
