@@ -1,4 +1,31 @@
+@import 'colors';
+
+:root
+{
+    color-scheme: dark;
+}
+
 html, body
 {
     padding: 0;
+    margin: 0;
+    background: $background;
+    color: $foreground-text;
+}
+
+*
+{
+    font-family: $font-family;
+}
+
+.page
+{
+    margin: 32px auto;
+    width: 85%;
+}
+
+h1.page-title
+{
+    font-size: 36px;
+    font-weight: 700;
 }
