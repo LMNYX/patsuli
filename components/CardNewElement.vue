@@ -1,5 +1,5 @@
 <template>
-  <div class="card" 
+  <div class="card new-card" 
       @mousemove="onMouseMove"
       @mouseleave="onMouseLeave">
         <div class="content">
