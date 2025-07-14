@@ -1,7 +1,5 @@
 <template>
-  <div class="card" 
-      @mousemove="onMouseMove"
-      @mouseleave="onMouseLeave">
+  <div class="card">
         <div class="content">
           <NuxtImg :src="cover" class="card-background" />
           <p class="card-title">{{ title }}</p>

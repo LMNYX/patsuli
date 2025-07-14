@@ -1,7 +1,5 @@
 <template>
-  <div class="card new-card" 
-      @mousemove="onMouseMove"
-      @mouseleave="onMouseLeave">
+  <div class="card new-card">
         <div class="content">
           <p class="card-title always-visible icon-inside"><Icon name="stash:plus-solid" /></p>
         </div>
